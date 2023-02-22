@@ -41,9 +41,9 @@ public class StudentDao {
 	}
 	
 	
-	//update
+	//update dont keep the function name same as update as it makes it irrelevent 
 	@Transactional
-	public void update(Student student) {
+	public void updateStudent(Student student) {
 		this.hibernateTemplate.update(student);
 	}
 	
