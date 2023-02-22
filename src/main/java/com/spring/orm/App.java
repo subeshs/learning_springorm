@@ -16,7 +16,7 @@ public class App
     {
         ApplicationContext context= new  ClassPathXmlApplicationContext("config.xml");
         StudentDao studentDao = context.getBean("studentDao", StudentDao.class);
-        Student s= new Student(123, "subesh","delhi");
+        Student s= new Student(153, "subesh","delhi");
         int r = studentDao.insert(s);
         System.out.println("done"+r);
         
